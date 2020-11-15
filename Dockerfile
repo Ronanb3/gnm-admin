@@ -32,6 +32,9 @@ USER 0
 ADD . /tmp/src
 RUN chown -R 1001:0 /tmp/src
 
+RUN mkdir /data
+RUN chmod 777 /data
+
 # This default user is created in the openshift/base-centos7 image
 ##USER 1001
 
